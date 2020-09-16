@@ -1,0 +1,26 @@
+.theme-control{
+  display: block;
+  padding: 20px;
+  background-color: #F6F6F6;
+  text-align: center;
+
+  label, button{
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  > section{
+    border: 1px solid #EEE;
+    flex: 1;
+    padding: 20px;
+
+    > main  {
+      display: block;
+      padding-top: 20px;
+    }
+  }
+}

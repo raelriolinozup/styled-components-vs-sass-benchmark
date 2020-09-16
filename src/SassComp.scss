@@ -1,0 +1,75 @@
+@import "./styles.scss";
+
+.Sass{
+  .container{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $font-size-md;
+    padding: $spacing-md;
+    border: 1px solid $border-color;
+    background-color: $background-color;
+    color: $text-color;  
+  
+    > label {
+      display: block;
+      padding: $spacing-xm 0;
+    }
+  
+    > input {
+      padding: $spacing-xm;
+      font-size: $font-size-sm;
+      color: $text-color;
+      border-radius: $border-radius;
+      background-color: $background-alt;
+      border: 1px solid $input-border-color;
+    }
+
+    &.hasError{
+
+      > label{
+        color: $error-color;
+      }
+
+      > input {
+        color: $error-color;
+        border-color: $error-color;
+      }
+    }
+
+    button {
+      display: block;
+      margin-top: $spacing-xm;
+      background-color: $primary;
+      color: white;
+      border: 0;
+      padding: $spacing-xm $spacing-md;
+      border-radius: $border-radius;
+    }
+
+    p {
+      font-size:$font-size-sm;
+      line-height: 160%;
+
+      strong{
+        color: $primary;
+      }
+    }
+
+    table {
+      border: 2px solid $border-color-strong;
+      width: 100%;
+
+      thead th {
+        background-color: $background-alt;
+        padding: $spacing-xm;
+        text-align: left;
+      }
+
+      tbody td {
+        padding: $spacing-xm;
+        text-align: left;
+        background-color: $background-color;
+      }
+    }
+  }
+}
